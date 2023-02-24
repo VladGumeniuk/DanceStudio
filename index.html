@@ -89,27 +89,29 @@
         <div class="popup__content">
           <a class="popup__close" href="##">X</a>
           <img class="popup__image" src="./images/popup.png" alt="">
-          <form class="anketa" action="">
+          <form id="form" class="anketa" action="#">
             <div class="anketa__title">Запис на пробне тренування</div>
             <ul class="anketa__name">
               <li>
-                <div>Ім'я одного з батьків</div>
-                <input class="anketa__input" type="text">
+                <label for="formName">Ім'я одного з батьків</label>
+                <input id="formName" type="text" name="name" class="anketa__input _req">
               </li>
               <li>
-                <div>Телефон одного з батьків</div>
-                <input class="anketa__input" type="text">
+                <label for="formPhone">Телефон одного з батьків</label>
+                <input id="formPhone" type="text" name="phone" class="anketa__input _req">
               </li>
               <li>
-                <div>Вік дитини</div>
-                <input class="anketa__input" type="number">
+                <label for="formAge">Вік дитини</label>
+                <input id="formAge" type="number" name="age" class="anketa__input">
               </li>
             </ul>
-            <button class="anketa__btn">Передзвоніть мені</button>
+            <button type="submit" class="anketa__btn">Передзвоніть мені</button>
           </form>
         </div>
       </div>
     </div>
+
+    <script src="./js/script.js"></script>
 
   </body>
 
