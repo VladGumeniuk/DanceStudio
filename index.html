@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAMOS DANCE</title>
-    <link rel="stylesheet" href="css/iconfonts.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -21,7 +20,7 @@
     <section class="banner">
       <div class="container">
         <h1 class="banner__title">ПРОФЕЙСІЙНА <span>ШКОЛА</span> <span class="banner__bg"></span> ТАНЦІВ В КИЄВІ</h1>
-        <button class="banner__btn">Запис на безкоштовне тренування</button>
+        <a href="#popup" class="banner__btn">Запис на безкоштовне тренування</a>
       </div>
     </section>
     <section class="studio">
@@ -83,6 +82,35 @@
         </ul>
       </div>
     </section>
+
+    <div id="popup" class="popup">
+      <a href="##" class="popup__area"></a>
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <a class="popup__close" href="##">X</a>
+          <img src="./images/popup.png" alt="">
+          <form class="anketa" action="">
+            <div class="anketa__title">Запис на пробне тренування</div>
+            <ul class="anketa__name">
+              <li>
+                <div>Ім'я одного з батьків</div>
+                <input class="anketa__input" type="text">
+              </li>
+              <li>
+                <div>Телефон одного з батьків</div>
+                <input class="anketa__input" type="text">
+              </li>
+              <li>
+                <div>Вік дитини</div>
+                <input class="anketa__input" type="text">
+              </li>
+            </ul>
+            <button class="anketa__btn">Передзвоніть мені</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </body>
 
 </html>
