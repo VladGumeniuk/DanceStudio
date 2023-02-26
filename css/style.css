@@ -278,7 +278,7 @@ body {
 }
 @media (max-width: 768px) {
   .studio__list li:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 .studio__box {
