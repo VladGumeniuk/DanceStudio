@@ -1,31 +1,27 @@
 html,
 body {
-	position: relative;
-	font-family: 'Dela Gothic';
-	background: url(../images/bg.webp) center no-repeat fixed, #333333;
-	color: #EAF2B2;
-	height: 100%;
-	@media (max-width:768px) {
-		background: url(../images/bgmob.png) center no-repeat fixed, #333333;
-	}
+  position: relative;
+  font-family: "Dela Gothic", Arial, sans-serif;
+  background: url(../images/bg.webp) center no-repeat fixed, #333333;
+  color: #eaf2b2;
+  height: 100%;
+  @media (max-width: 768px) {
+    background: url(../images/bgmob.png) center no-repeat fixed, #333333;
+  }
 }
 
-.container{
+.container {
   max-width: 1221px;
   margin: 0 auto;
   padding: 0 15px;
-  @media (max-width:768px) {
-	max-width: 390px;
-	padding: 0 20px;
+  @media (max-width: 768px) {
+    max-width: 390px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 768px) {
-	input, select {
-	  font-size: 16px;
-	}
- }
-
-
-
-
-
+  input,
+  select {
+    font-size: 16px;
+  }
+}
