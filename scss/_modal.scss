@@ -1,0 +1,264 @@
+.bgdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+
+  @media screen and (min-width: 480px) {
+    padding: 94px 15px;
+  }
+}
+
+.bgdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bgdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal {
+  width: 100%;
+  padding-top: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal-exit {
+  display: block;
+  margin-left: auto;
+  margin-right: 9px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  color: #333;
+  background-color: #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-exit:hover,
+.modal-exit:focus {
+  color: #2196f3;
+  outline: none;
+}
+
+.modal-container {
+  padding: 2px 40px 40px 40px;
+}
+
+.modal-text {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+
+  color: #212121;
+}
+
+.modal-form {
+  width: 100%;
+}
+
+.form-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.modal-icon {
+  position: absolute;
+  display: block;
+
+  bottom: 14px;
+  left: 14px;
+
+  width: 15px;
+  height: 15px;
+
+  color: #333;
+  background-color: #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-modal {
+  fill: currentColor;
+}
+
+.form-contacts input {
+  width: 100%;
+  padding: 10px 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-contacts input:hover,
+.form-contacts input:focus {
+  border: 1px solid #2196f3;
+}
+
+.form-contacts input:hover + .modal-icon,
+.form-contacts input:focus + .modal-icon {
+  color: #2196f3;
+}
+
+.form-contacts label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.form-margin {
+  margin-bottom: 20px;
+}
+
+.form-contacts textarea {
+  height: 120px;
+  padding: 12px 16px;
+
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form-contacts textarea:hover,
+.form-contacts textarea:focus {
+  border: 1px solid #2196f3;
+}
+
+.form-policy {
+  margin-bottom: 30px;
+}
+
+.form-policy input {
+  margin-right: 8px;
+
+  background: #212121;
+}
+
+.form-policy label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  color: #757575;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
+.modal-checkbox {
+  display: inline-block;
+
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #212121;
+  border-radius: 3px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.checkbox:checked + .modal-checkbox {
+  border: 2px solid $color-base;
+  background-color: $color-base;
+  background-image: url("../img/modal/iconcheck.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal-link-color {
+  color: #2196f3;
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  cursor: pointer;
+
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #188ce8;
+}

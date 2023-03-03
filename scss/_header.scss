@@ -1,0 +1,102 @@
+.header__row {
+  display: flex;
+}
+.logo {
+  padding-left: 33px;
+  padding-top: 48px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.header__phone {
+  margin-left: 111px;
+  padding-top: 35px;
+  a {
+    color: #eaf2b2;
+    font-size: 40px;
+    line-height: 58px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    padding-top: 35px;
+  }
+}
+.banner {
+  padding: 76px 0 120px 0;
+  @media (max-width: 768px) {
+    padding: 42px 0 64px 0;
+  }
+}
+.banner__title {
+  margin-bottom: 44px;
+  font-size: 96px;
+  line-height: 139px;
+  text-align: center;
+  span {
+    color: #d34a42;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 41px;
+  }
+}
+.banner__bg {
+  display: inline-flex;
+  position: relative;
+  top: 15px;
+  margin: 0 40px 0 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #d34a42;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    background: url(../images/hamza.webp) center no-repeat;
+    @media (max-width: 768px) {
+      top: -10px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: url(../images/hamzamobile.webp) center no-repeat;
+    }
+  }
+  @media (max-width: 768px) {
+    top: 5px;
+    margin: 0 10px 0 5px;
+    width: 33px;
+    height: 33px;
+  }
+}
+.banner__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 456px;
+  height: 74px;
+  background: #d34a42;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #eaf2b2;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #eaf2b2;
+    color: #000;
+  }
+  @media (max-width: 768px) {
+    width: 323px;
+    height: 52px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}

@@ -80,7 +80,7 @@ html,
 body {
   position: relative;
   font-family: "Dela Gothic";
-  background: url(../images/bg.png) center no-repeat fixed, #333333;
+  background: url(../images/bg.webp) center no-repeat fixed, #333333;
   color: #EAF2B2;
   height: 100%;
 }
@@ -186,7 +186,7 @@ body {
   left: 0;
   width: 140px;
   height: 140px;
-  background: url(../images/hamza.png) center no-repeat;
+  background: url(../images/hamza.webp) center no-repeat;
 }
 @media (max-width: 768px) {
   .banner__bg::before {
@@ -194,7 +194,7 @@ body {
     left: 0;
     width: 40px;
     height: 40px;
-    background: url(../images/hamza-mobile.png) center no-repeat;
+    background: url(../images/hamzamobile.webp) center no-repeat;
   }
 }
 @media (max-width: 768px) {
@@ -330,87 +330,6 @@ body {
   position: absolute;
   bottom: 10px;
   left: -10px;
-}
-
-.teachers {
-  padding-bottom: 120px;
-}
-.teachers__title {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  line-height: 58px;
-}
-@media (max-width: 768px) {
-  .teachers__title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 29px;
-  }
-}
-.teachers__list li {
-  display: flex;
-  margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  .teachers__list li {
-    display: block;
-  }
-}
-.teachers__list li:last-child {
-  margin: 0;
-}
-.teachers__body {
-  max-width: 649px;
-  padding: 0 0 0 30px;
-}
-@media (max-width: 768px) {
-  .teachers__body {
-    padding: 0;
-  }
-}
-.teachers__subtitle {
-  margin-bottom: 24px;
-  font-size: 40px;
-  line-height: 58px;
-}
-@media (max-width: 768px) {
-  .teachers__subtitle {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 32px;
-    line-height: 46px;
-  }
-}
-.teachers__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  line-height: 30px;
-}
-@media (max-width: 768px) {
-  .teachers__text {
-    font-size: 15px;
-    line-height: 20px;
-  }
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 362px;
-  height: 475px;
-  background: #fff;
-  border-radius: 15px;
-}
-@media (max-width: 768px) {
-  .img {
-    margin: 0 auto;
-    width: 248px;
-    height: 325px;
-  }
 }
 
 .start {
