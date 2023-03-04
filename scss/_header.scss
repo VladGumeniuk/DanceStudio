@@ -63,13 +63,13 @@
     left: 0;
     width: 140px;
     height: 140px;
-    background: url(../images/hamza.webp) center no-repeat;
+    background: url(../images/hamza.png) center no-repeat;
     @media (max-width: 768px) {
       top: -10px;
       left: 0;
       width: 40px;
       height: 40px;
-      background: url(../images/hamzamobile.webp) center no-repeat;
+      background: url(../images/hamzamobile.png) center no-repeat;
     }
   }
   @media (max-width: 768px) {
@@ -92,10 +92,13 @@
   line-height: 30px;
   color: #eaf2b2;
   transition: all 0.5s ease;
-  &:hover {
-    background: #eaf2b2;
-    color: #000;
+  @media (any-hover: hover) {
+    &:hover {
+      background: #eaf2b2;
+      color: #000;
+    }
   }
+
   @media (max-width: 768px) {
     width: 323px;
     height: 52px;

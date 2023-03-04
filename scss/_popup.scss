@@ -41,10 +41,14 @@
     right: 10px;
     font-size: 20px;
     color: #000;
+    z-index: 5;
     transition: all 0.3s ease;
-    &:hover {
-      color: #eaf2b2;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #eaf2b2;
+      }
     }
+
     @media (max-width: 768px) {
       color: #eaf2b2;
     }
@@ -124,9 +128,11 @@
     font-size: 22px;
     color: #000000;
     transition: all 0.5s ease;
-    &:hover {
-      background: #d34a42;
-      color: #eaf2b2;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #d34a42;
+        color: #eaf2b2;
+      }
     }
     @media (max-width: 768px) {
       font-size: 16px;

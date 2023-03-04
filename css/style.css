@@ -191,7 +191,7 @@ body {
   left: 0;
   width: 140px;
   height: 140px;
-  background: url(../images/hamza.webp) center no-repeat;
+  background: url(../images/hamza.png) center no-repeat;
 }
 @media (max-width: 768px) {
   .banner__bg::before {
@@ -199,7 +199,7 @@ body {
     left: 0;
     width: 40px;
     height: 40px;
-    background: url(../images/hamzamobile.webp) center no-repeat;
+    background: url(../images/hamzamobile.png) center no-repeat;
   }
 }
 @media (max-width: 768px) {
@@ -225,9 +225,11 @@ body {
   color: #eaf2b2;
   transition: all 0.5s ease;
 }
-.banner__btn:hover {
-  background: #eaf2b2;
-  color: #000;
+@media (any-hover: hover) {
+  .banner__btn:hover {
+    background: #eaf2b2;
+    color: #000;
+  }
 }
 @media (max-width: 768px) {
   .banner__btn {
@@ -533,10 +535,13 @@ body {
   right: 10px;
   font-size: 20px;
   color: #000;
+  z-index: 5;
   transition: all 0.3s ease;
 }
-.popup__close:hover {
-  color: #eaf2b2;
+@media (any-hover: hover) {
+  .popup__close:hover {
+    color: #eaf2b2;
+  }
 }
 @media (max-width: 768px) {
   .popup__close {
@@ -625,9 +630,11 @@ body {
   color: #000000;
   transition: all 0.5s ease;
 }
-.anketa__btn:hover {
-  background: #d34a42;
-  color: #eaf2b2;
+@media (any-hover: hover) {
+  .anketa__btn:hover {
+    background: #d34a42;
+    color: #eaf2b2;
+  }
 }
 @media (max-width: 768px) {
   .anketa__btn {
