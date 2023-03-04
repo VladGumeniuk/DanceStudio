@@ -4,6 +4,9 @@
 .logo {
   padding-left: 33px;
   padding-top: 48px;
+  img {
+    max-width: 100%;
+  }
   @media (max-width: 768px) {
     display: none;
   }

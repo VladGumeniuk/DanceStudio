@@ -118,6 +118,9 @@ body {
   padding-left: 33px;
   padding-top: 48px;
 }
+.logo img {
+  max-width: 100%;
+}
 @media (max-width: 768px) {
   .logo {
     display: none;
@@ -508,6 +511,9 @@ body {
   align-items: center;
   padding: 30px 10px;
 }
+.popup__image {
+  max-width: 100%;
+}
 @media (max-width: 768px) {
   .popup__image {
     display: none;
@@ -530,11 +536,11 @@ body {
   transition: all 0.3s ease;
 }
 .popup__close:hover {
-  color: #EAF2B2;
+  color: #eaf2b2;
 }
 @media (max-width: 768px) {
   .popup__close {
-    color: #EAF2B2;
+    color: #eaf2b2;
   }
 }
 .popup__area {
@@ -597,7 +603,7 @@ body {
   height: 30px;
   color: #fff;
   background: #333333;
-  border-bottom: 2px solid #D34A42;
+  border-bottom: 2px solid #d34a42;
 }
 @media (max-width: 768px) {
   .anketa__input {
@@ -611,7 +617,7 @@ body {
   margin: 0 auto;
   width: 317px;
   height: 74px;
-  background: #EAF2B2;
+  background: #eaf2b2;
   border-radius: 40px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -620,8 +626,8 @@ body {
   transition: all 0.5s ease;
 }
 .anketa__btn:hover {
-  background: #D34A42;
-  color: #EAF2B2;
+  background: #d34a42;
+  color: #eaf2b2;
 }
 @media (max-width: 768px) {
   .anketa__btn {
