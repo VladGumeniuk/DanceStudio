@@ -1,8 +1,4 @@
 .studio {
-  padding-bottom: 120px;
-  @media (max-width: 768px) {
-    padding-bottom: 65px;
-  }
   &__title {
     margin: 0 0 50px 133px;
     font-size: 40px;
@@ -54,6 +50,9 @@
     margin-bottom: 50px;
     @media (max-width: 768px) {
       display: block;
+    }
+    &:last-child {
+      margin: 0;
     }
   }
 

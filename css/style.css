@@ -240,14 +240,6 @@ body {
   }
 }
 
-.studio {
-  padding-bottom: 120px;
-}
-@media (max-width: 768px) {
-  .studio {
-    padding-bottom: 65px;
-  }
-}
 .studio__title {
   margin: 0 0 50px 133px;
   font-size: 40px;
@@ -304,6 +296,9 @@ body {
   .studio__body {
     display: block;
   }
+}
+.studio__body:last-child {
+  margin: 0;
 }
 .studio__image-container img {
   max-width: 100%;
