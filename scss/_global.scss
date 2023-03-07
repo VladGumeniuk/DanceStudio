@@ -1,7 +1,7 @@
 html,
 body {
   position: relative;
-  font-family: "Dela Gothic", Arial, sans-serif;
+  font-family: "Dela Gothic", sans-serif;
   background: url(../images/bg.webp) center no-repeat fixed, #333333;
   color: #eaf2b2;
   height: 100%;
@@ -11,13 +11,9 @@ body {
 }
 
 .container {
-  max-width: 1221px;
+  max-width: $containerWidth + px;
   margin: 0 auto;
-  padding: 0 15px;
-  @media (max-width: 768px) {
-    max-width: 390px;
-    padding: 0 20px;
-  }
+  padding: 0 $containerPadding + px;
 }
 @media (max-width: 768px) {
   input,

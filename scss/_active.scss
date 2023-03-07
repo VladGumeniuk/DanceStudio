@@ -1,0 +1,41 @@
+.active {
+  padding: 60px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+    gap: 10px;
+  }
+
+  &__list-iteam {
+    padding: 30px 10px 20px;
+    border: 3px solid #d34a42;
+    border-radius: 10px;
+  }
+
+  &__list-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  &__list-title {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.45;
+    text-transform: uppercase;
+    text-align: center;
+    color: #eaf2b2;
+  }
+
+  &__list-text {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.333;
+    text-align: center;
+    color: #eaf2b2;
+  }
+}
+.svg-icon {
+  width: 54px;
+  height: 54px;
+}
