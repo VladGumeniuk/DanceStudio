@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-display: swap;
-  font-family: "Dela Gothic";
-  src: url(../fonts/DelaGothicOne-Regular.ttf) format("truetype");
-  font-weight: normal;
+  font-family: "Dela Gothic One";
+  src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), url("../fonts/DelaGothicOne-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 * {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 html,
 body {
   position: relative;
-  font-family: "Dela Gothic", sans-serif;
+  font-family: "Dela Gothic One", sans-serif;
   background: url(../images/bg.webp) center no-repeat fixed, #333333;
   color: #eaf2b2;
   height: 100%;
